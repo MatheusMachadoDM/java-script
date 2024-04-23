@@ -57,7 +57,36 @@
             5 === '5'   =   false
             5 === 5     =   true
 
+        ------------------------------------------------------
 
+        Operadores lógicos:
+
+        !   =   Negação
+        &&  =   Conjunção (E)
+        ||  =   Disjunção (Ou)
+
+        ------------------------------------------------------
+        Operador Ternário:
+
+        "?"     = Caso seja verdadeiro
+        ":"     = Caso seja falso
+
+        Ex:
+            média >= 7.0 ? 'aprovado' : 'reprovado'
+        ------------------------------------------------------
+
+        Precedência de operadores:
+
+        1°: Operadores Aritméticos  =   Na sequência: () -> ** -> * / % -> + - 
+        2°: Operadores Relacionais  =   Quem vier primeiro da direita para a esquerda
+        3°: Operadores Lógicos      =   Na sequência: ! -> && -> ||
+        4°: Operador ternário
+
+        EX: var a = 5, var b = 8
+
+        a > b && b % 2 == 0
+
+        Primeiro será resolvido o "b % 2", depois o "a > b" e o "== 0" e por útimo o "&&"
 
         */
     </script>
