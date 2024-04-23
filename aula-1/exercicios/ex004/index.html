@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        var palavra = 'javascript'
+        palavra.length //Quantos caracteres a string tem
+        palavra.toUpperCase //Transforma a string para letras maiúsculas
+        palavra.toLowerCase //Transforma a string para letras minúsculas
+
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`Olá ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome tem ${nome.length} letras!<br>`)
+
+        var n1 = 2060.9
+
+        n1.toFixed(2)//Para mostrar mais de uma casa depois do ponto
+        n1.toFixed(2).replace('.',',') //Para substituir o ponto por vírgula
+        n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})// Para colocar valor como dinheiro em real
+
+        document.write(`Salário: ${n1.toFixed(2).replace('.',',')}<br>`)
+        document.write(`Salário: ${n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}`)
+
+    </script>
+</body>
+</html>

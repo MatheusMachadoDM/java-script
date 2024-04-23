@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira aula de JS</title>
+    <style>
+        body{
+            background-color: lightblue;
+            color: rgb(30, 30, 138);
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Terceira aula de JavaScript</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo repellat nemo exercitationem illum suscipit cum, voluptatum pariatur? Aliquid inventore possimus harum iste vel, reiciendis libero, illo minus est itaque mollitia!</p>
+    <script>
+        //Number.parseInt() ou parseFloat serve para converter a váriavel de string para Int ou Float
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        //Caso não seja preciso diferenciar entre Int e Float, podemos colocar apenas Number()
+        var n2 = Number(window.prompt('Digite outro número'))
+        var n3 = n1 + (n2)
+        //Para converter de number para string utilizamos String(var) ou var.toString()
+        window.alert('A soma destes números é: ' + String(n3))//Forma de incorporar uma váriavel
+        window.alert(`A soma dos números digitados é ${n3.toString()}`)//Outra forma de incorporar uma váriavel usando concatenação
+
+    </script>
+</body>
+</html>
