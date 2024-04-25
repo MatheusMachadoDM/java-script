@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo DOM</title>
+    <style>
+        body{
+            background-color: rgb(192, 220, 229);
+            color: darkblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Document Object Model</h1>
+    <p><strong>DOM</strong> significa modelo de documento de objeto</p>
+    <p class="paragrafo">Tudo se separa por parent e child</p>
+    <div name="div1">
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" placeholder="Seu nome aqui">
+    </div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] //Podemos selecionar o elemento por TAG e definir qual das tags é usando o []
+        var titulo1 = window.document.getElementById('titulo') //Podemos selecionar o elemento usando o ID
+        var pa = window.document.getElementsByClassName('paragrafo')[0] //Podemos selecionar o elemento usando a classe
+        var caixaNome = window.document.getElementsByName('div1')[0] //Podemos selecionar o elemento usando o name
+        var d = window.document.querySelector('h1#titulo').style.color = 'white' //Podemos selecionar o elemento usando o seletor do CSS
+
+        p1.style.color = 'black'
+        titulo1.style.background = 'blue'
+        caixaNome.style.color = 'red'
+    </script>
+</body>
+</html>
