@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #area{
+            background-color: lightgreen;
+            color: darkgreen;
+            font-size: 2em;
+
+            width: 200px;
+            height: 200px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        <p>Interaja...</p>
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+
+        function clicar(){
+            a.innerText = 'Clicou!'
+        }
+        function entrar(){
+            a.innerText = 'Entrou!'
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+        }
+    </script>
+</body>
+</html>
