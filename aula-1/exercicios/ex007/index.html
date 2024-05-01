@@ -28,21 +28,28 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()">
         <p>Interaja...</p>
     </div>
 
     <script>
         var a = window.document.getElementById('area')
+        a.addEventListener('mouseout', sair)
 
         function clicar(){
             a.innerText = 'Clicou!'
+            a.style.background = 'lightcoral'
+            a.style.color = 'darkred'
         }
         function entrar(){
             a.innerText = 'Entrou!'
+            a.style.background = 'lightgoldenrodyellow'
+            a.style.color = 'darkgoldenrod'
         }
         function sair(){
             a.innerText = 'Saiu!'
+            a.style.background = 'lightgreen'
+            a.style.color = 'darkgreen'
         }
     </script>
 </body>
