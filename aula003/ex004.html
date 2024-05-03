@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+</head>
+<body>
+    <h1>Cidadania</h1>
+    <p>
+        Digite em que país você nasceu:
+        <input type="text" name="txtcid" id="txtcid">
+        <input type="submit" value="Enviar" onclick="verificar()">
+    </p>
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var cid = document.getElementById('txtcid')
+
+            if (cid.value == 'Brasil'){
+            resultado.innerHTML = 'Você é Brasileiro!'
+            }else{
+                resultado.innerHTML = 'Você é estrangeiro!'
+            }
+
+        }
+    </script>
+</body>
+</html>
