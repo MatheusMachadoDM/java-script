@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gray;
+    text-align: center;
+    height: 100vh;
+}
+header, footer{
+    margin: 20px 0px;
+    color: white;
+}
+main{
+    background-color: white;
+    height: 500px;
+    width: 600px;
+
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479)
+}
+div#mensagem{
+    height: 100px;
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+div#foto{
+    background: url(imagens/manha.jpg) no-repeat center top;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+}
