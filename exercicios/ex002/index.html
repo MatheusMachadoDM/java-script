@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade:</h1>
+    </header>
+    <main>
+        <div>
+            <p>
+                <label for="idata-nascimento">Ano de nascimento:</label>
+                <input type="number" name="data-nascimento" id="idata-nascimento">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="sexo" id="imasc">
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="ifem">
+                <label for="imasc">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="resultado">
+            <p>Preencha os dados para verificar!</p>
+        </div>
+    </main>
+    <footer>
+        <p>Site criado por <strong>Matheus Machado</strong> para estudo pessoal.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
