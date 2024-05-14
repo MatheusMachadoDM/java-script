@@ -26,3 +26,14 @@ function contar (){
             }
         }
     }
+
+    addEventListener("keydown", function(event){
+        if (event.key === "Enter"){
+            contar()
+        }
+    })
+
+    function limpar(){
+        var res = document.getElementById('resultado')
+        res.innerHTML = 'Peparando a contagem...'
+    }

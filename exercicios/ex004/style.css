@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(204, 76, 72);
+    text-align: center;
+    height: 100vh;
+}
+header, footer{
+    margin: 20px 0px;
+    color: white;
+}
+main{
+    background-color: white;
+    width: 600px;
+
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+
+}
+div{
+    display: none;
+    overflow: hidden;
+    border: solid grey 1px;
+    margin: 10px;
+}
+div select {
+    padding: 10px;
+    margin: -5px -20px -5px -5px;
+  }
