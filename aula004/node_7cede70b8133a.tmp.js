@@ -1,4 +1,4 @@
-var num = [3, 4, 1, 2, 9, 6, 7]
+let num = [3, 4, 1, 2, 9, 6, 7]
 num.push(0) //Adiciona um valor a ultima posição
 num.sort() //Coloca os valores em ordem crescente
 console.log('posição: ' + num.indexOf(9)) //.indexOf mostra qual a posicão do valor selecionado
